@@ -1,0 +1,16 @@
+.navbar{
+    background-color: var(--primary-color);
+    display: flex;  /*ponemos un elemento al lado del otro*/
+    justify-content:space-between;
+    padding: 1rem; /*rem son unidades relativas*/
+}   
+.logo-banda-negro{
+    width: 100px;
+    height: auto;
+}  
+
+.foto-menu-desplegable{
+    width: 20px;
+    height: auto;
+    justify-content: right;
+}

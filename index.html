@@ -3,18 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Magliano Metal</title>
+    <link rel="stylesheet" href="Styles/style.css"/>
+    
+    <!--para descargar fuentes de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Poppins:wght@100&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="brand"> 
-                <img src="Assets/MM-ROJO-FT.png" alt="Logo de Magliano Metal">
+                <img class="logo-banda-negro" src="Assets/BANDA-NEGRO-FT.png" alt="Logo de Magliano Metal">
             </div>
             <div class="actions">
-                <img src="Assets/MENU-DESPLEGABLE.png" alt="Menu desplegable">
+                <img class="foto-menu-desplegable" src="Assets/MENU-DESPLEGABLE.png" alt="Menu desplegable">
             </div>
         </nav>
     </header>
+    <main>
+        <section class="hero"> 
+            <img class="left-floting" src="Assets/tornillo.png" alt="tornillo">
+            <img class="right-floting" src="Assets/rodillo.png" alt="rodillo" >
+            <div class="logo-wapper"> <!-- contenedor de elementos flotantes--> 
+                <img class= "logo-hexagono" src="Assets/MM-ROJO-FT.png" alt="Magliano Metal">
+                <div class="logo-circulo"></div> 
+                <div class="logo-rectangulo"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title text-serif"> "Ferretería industrial desde 1992" </h2>
+                <!-- anidamos dos clases, le ponemos el nombre de la clase al titulo, y la fuente con text-serif-->
+                <button class="hero-button">Contáctenos</button>
+               
+            </div>  
+        </section>
+        <section class="features">
+            <div class="features-wrapper">
+                <div class="features1">
+                    <h1 class="text-serif feature-text">Una empresa familiar.</h1>
+                    <p>Contamos con mas de 30 años de trayectoria, trabajando en el rubro siderúrgico, bulonero y en pinturas, tanto industriales como para el hogar y obra.</p>
+                    <img src="Assets/Frente-Negocio.png" alt="Negocio">
+                </div>
+                <div class="features2">
+                    <h1 class="text-serif feature-text">Pinturería.</h1>
+                    <p>Distribuidores oficiales de Pintecord, en hogar y obra; PPG en automotor.</p>
+                    <img src="Assets/Pintureria-Negocio.png" alt="Pinturería Negocio">
+                </div>
+                <div class="features3">
+                    <h1 class="text-serif feature-text">Material siderúrgico</h1>
+                    <p>Chapas de techo, perfiles, caños, laminados, trefilados, planchuelas, ángulos, u, ipn, upn, entre otros.</p>
+                    <img src="Assets/Hierros-Negocio.png" alt="Material siderúrgico">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="circulo-footer"></div> 
+        <div class="log-footer">
+            <img class="logo-banda-negro" src="Assets/BANDA-NEGRO-FT.png" alt="logo">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href=/catalogo target="_blank"> Catálogo </a></li>  <!--con tag me abre una pestaña nueva-->
+                <li><a href=/contacto target="_blank"> Contacto </a></li>
+                <li><a href=/map target="_blank"> Dirección </a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>© Copyrigth 2023</p>
+            <p>Developed by Magliano Débora</p>
+        </div>
+
+    </footer>
 </body>
-</html>
+</html> 

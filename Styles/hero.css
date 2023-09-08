@@ -1,0 +1,93 @@
+.hero{
+    position: relative;
+    padding-bottom: 3rem;
+}
+.logo-wapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.logo-circulo{   /*no tiene ningun contendio, porque queremos poner una forma*/
+    background-color:var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute; /*si aca usamos el abosulto, 
+    y lo hacemos que aparezca debajo del fondo,
+    tenemos que usar el relativo en el padre*/ 
+    top: 0;  
+    z-index: -1; /*para q este al fondo tenemos 3 ejes, el z es para superponer*/
+    border-radius: 0% 0% 50% 50%;
+    transform: translate(0,-45%); 
+                                            
+}
+
+.logo-rectangulo{
+    background-color: var(--texto-color);
+    width: 30%;
+    height: 3%;
+    top:0;
+    position: absolute;
+    border-radius: 0,0,0,0;
+
+}
+
+.logo-hexagono{
+    width: 15%;
+    height: auto;
+    padding: 1rem;
+}
+
+
+.hero-content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-title{
+    font-size: 2rem;
+    color: var(--texto-color);
+    text-align: center;
+    max-width: 400px;
+}
+
+.hero-button{
+    background-color: var(--texto-color);
+    color:white;
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    width: fit-content; /*solo se estira el largo del contenido*/
+    /*con las dos lineas debajo, cambio el color de manera gradual*/
+    transition: all; 
+    transition-duration: 300ms;
+}
+.hero-button:hover{  /*suceden cosas al pasar el cursor sobre el boton*/
+    cursor: pointer; /*se pone una maniot*/
+    background-color: brown; /*se cambia el color*/
+    scale:1.25; /*cuando paso el raton arriba, aumenta un poco el tamaño*/
+
+}
+
+.left-floting{
+    width: 168px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    transform: rotate(-10deg) translate(-5%,22%);
+}
+
+.right-floting{
+    width: 188px;
+    position: absolute;
+    right:0;
+    z-index: -1;
+    bottom: 0;
+    transform: rotate(-38deg) translate(10%, 8%);
+}

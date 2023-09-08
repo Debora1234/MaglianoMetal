@@ -1,0 +1,37 @@
+
+.features-wrapper{
+    margin-top: 5%;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: "Montserrat", serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.features-wrapper img {
+    width: 100%;
+    border-radius: 28px;
+    max-width: 450%;
+    aspect-ratio: 2/3;   /*para que quede rectangular*/
+    object-fit: cover;
+  
+}
+
+.feature-text{
+    font-size: 2rem;
+}
+
+.features-wrapper p{
+    padding: 2rem;
+    font-weight: bold ;
+}
+
+@media(min-width: 768px){/*ya en una tablet se ven las tres fotos una al lado de la otra*/
+    .features-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction:column;
+        align-items:end;
+    }
+}

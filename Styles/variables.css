@@ -1,0 +1,21 @@
+/*root elemento raiza o base de nuestro html*/
+:root{
+    --primary-color: rgb(167, 159, 159);
+    background-color: rgb(230, 222, 222);
+    --texto-color: rgb(39, 38, 38);
+
+  
+}
+
+main{
+    font-family: "Kumar One", serif;
+    overflow: hidden; /*para que se "extiendan" las imagenes, no halla cortes*/ 
+}
+
+body{
+    font-family: "Montserrat", serif;
+}
+
+.text-serif{
+    font-family: "Kumar One", serif;  /*primero ponemos la fuente que queremos la de google, si por algo no anda, ve la fuente de respaldo la serif*/
+}

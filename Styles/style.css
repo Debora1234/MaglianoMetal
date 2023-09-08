@@ -1,0 +1,17 @@
+/*archivo de reseteo*/
+@import "reset.css";
+
+/*archivo de variables*/
+@import "variables.css";
+
+/*archivo de estilos de la barra superior*/
+@import "navbar.css";
+
+/*archivo de estilos del cuerpo principal*/
+@import "hero.css";
+
+/*cuerpo principal*/
+@import "features.css";
+
+/*pie de pagina*/
+@import "footer.css";

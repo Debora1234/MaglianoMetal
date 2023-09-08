@@ -1,0 +1,49 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 48px;
+    gap: 1.5rem;
+    position: relative;
+
+}
+
+.links a{
+    text-decoration: none;
+    color: var(--texto-color);
+    font-family: Monserrat;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: colum;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+.copyright{
+    font-family: Monserrat;
+    padding: 0.1rem;
+}
+
+.logo-banda-negro{
+    width: 150px;
+    height: auto;
+}  
+
+
+
+.circulo-footer{   /*no tiene ningun contendio, porque queremos poner una forma*/
+    background-color:var(--primary-color);
+    width: 120%;
+    height: 120%;
+    position: absolute; /*si aca usamos el abosulto, 
+    y lo hacemos que aparezca debajo del fondo,
+    tenemos que usar el relativo en el padre*/ 
+    bottom: -150px;  
+    z-index: -1; /*para q este al fondo tenemos 3 ejes, el z es para superponer*/
+    border-radius: 50% 50% 0% 0%;
+    transform: translate(0,-45%); 
+                                            
+}
